@@ -7,7 +7,21 @@ header{
     }
     .top-nav{
         .lanuage{
-            color: $main-color;
+            &:hover{
+                color: $main-color;
+            }
+        }
+    }
+    .bottom-nav{
+        .navbar-nav{
+            li{
+                a{
+                    color: $bg-light;
+                    &:hover{
+                        color: $main-color;
+                    }
+                }
+            }
         }
     }
 }
