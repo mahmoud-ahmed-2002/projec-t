@@ -1,7 +1,13 @@
-.navbar{
-    .navbar-collapse{
+@import "../../../styles.scss";
+@import "../../app.component.scss";
+
+header{
+    .navbar{
+        padding: 15px 0px ;
+    }
+    .top-nav{
         .lanuage{
-            list-style-type: none;
+            color: $main-color;
         }
     }
 }
