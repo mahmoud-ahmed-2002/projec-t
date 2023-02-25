@@ -2,16 +2,17 @@
   <div class="top-nav">
     <nav class=" navbar navbar-expand-lg navbar-dark bg-light">
       <div class=" container">
-        <a class="navbar-brand d-md-block d-none" href="#">صوره اللوجو</a>
+        <a class="navbar-brand d-md-block d-none" href="#">
+          <img src="../../../assets/iamges/menofia-university.png" alt="">
+        </a>
         <div class=" collapse navbar-collapse">
-          <ul class="lanuage ms-auto mb-2 mb-lg-0">
-            <li>
-              <i class="fas fa-globe"></i>
-              <div class=" box-lanuage">
-
-              </div>
-            </li>
-            <li><a href="">mahmoud</a></li>
+          <ul class="dark-mode me-auto mb-2 mb-lg-0">
+            <li (click)="isDark=!isDark" *ngIf="!isDark"><i class="fas fa-moon"></i></li>
+            <li (click)="isDark=!isDark" *ngIf="isDark"><i class="fas fa-sun"></i></li>
+          </ul>
+          <ul class="lanuage me-auto mb-2 mb-lg-0">
+            <li class="mybtn" (click)="isTest=!isTest" *ngIf="isTest"><i class="fas fa-globe"></i> AR</li>
+            <li class="mybtn" (click)="isTest=!isTest" *ngIf="!isTest"><i class="fas fa-globe"></i> EN</li>
           </ul>
         </div>
       </div>
@@ -20,7 +21,9 @@
   <div class="bottom-nav">
     <nav class="navbar navbar-expand-lg navbar-lirht bg-dark">
       <div class="container">
-        <a class="navbar-brand d-md-none" href="#">صوره اللوجو</a>
+        <a class="navbar-brand d-md-none" href="#">
+          <img src="../../../assets/iamges/menofia-university.png" alt="">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>

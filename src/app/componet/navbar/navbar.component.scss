@@ -2,21 +2,51 @@
 @import "../../app.component.scss";
 
 header{
+    .navbar-brand{
+        img{
+            width: 200px;
+            height: 80px;
+        }
+    }
     .navbar{
         padding: 15px 0px ;
     }
     .top-nav{
+        position: relative;
+        .dark-mode{
+            position: absolute;
+            left: 225px;
+            margin-left:20px;
+            li{
+                i{
+                    font-size: 18px;
+                    color: $main-color;
+                    transition: all .3s ease-in-out;
+                    &:hover{
+                        color: #000;
+                    }
+                }
+            }
+        }
         .lanuage{
-            &:hover{
-                color: $main-color;
+            li{
+                margin: 0px 10px ;
+                font-size: 15px;
+                i{
+                    padding: 7px;
+                }
+            }
+            .mybtn{
+                padding: 3px 8px;
             }
         }
     }
     .bottom-nav{
         .navbar-nav{
             li{
+                padding:0px 20px ;
                 a{
-                    color: $bg-light;
+                    color: $text-light;
                     &:hover{
                         color: $main-color;
                     }
