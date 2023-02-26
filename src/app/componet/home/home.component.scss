@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+=======
+img{
+    height: 95vh;
+    background-size: cover;
+}
+body{
+    font-family: 'Cairo', sans-serif;;
+>>>>>>> 423e4c72a5c9feb536bd3217242b79c4465475ea
 
 
 *{
@@ -5,35 +14,188 @@
     padding: 0;
     box-sizing: border-box;
 }
+<<<<<<< HEAD
 
 .special-heading{
     color: #ebeced;
     font-size: 80px;
     text-align: center;
+=======
+html{
+    scroll-behavior: smooth;
+}
+
+$mainColor: #6f0215;
+$mainColor1: #a87d5b;
+$mainColor2: #193944;
+
+.about{
+    margin-top: 20px;
+ padding: 20px;
+
+}
+.about .text{
+    padding: 30px;
+}
+.about .text h3{
+    font-size: 30px;
+>>>>>>> 423e4c72a5c9feb536bd3217242b79c4465475ea
     font-weight: 700;
-    letter-spacing: -4px;
-    margin: 0;
-    letter-spacing: 4px;
-}
-.about .head{
+    background-color: $mainColor1;
+    color: white;
     width: 30%;
-    font-size: 3rem;
-    position: absolute;
-    right:35%;
-    bottom: -28%;
-    font-weight: bold;
     text-align: center;
-   color:#212529;
-    padding:15px;
-    line-height: 1.5;
+    margin-right: 35%;
+    padding: 20px;
 }
-.about .line{
-    width: 80px;
-    height: 3px;
-    background-color: #710215;
-    position: absolute;
-    right:48%;
-    bottom: -28%;
-    margin:2px;
+.about .row{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
     
 }
+.about .col-md-4:hover{
+    background-color: #193944;
+    color: white;
+    transition: 0.5s all;
+    padding: 10px;
+}
+.about .col-md-4 p{
+    font-size: 20px;
+    padding: 10px;
+    line-height: -5px;
+    letter-spacing: 3px;
+    text-align: start;
+}
+.about .col-md-4{
+    border: 1px #193944 solid;
+}    
+// نهايه رياده الاعمال
+
+// start gallery
+.gallery{
+margin-top: 30px;
+
+}
+.gallery .row{
+    background-color: #193944;
+    display: flex;
+    justify-content: center;
+}
+.gallery img{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 5%;}
+// end gallary
+
+// start links
+.links{
+    padding: 30px;
+    margin-top: 20px;
+    height: 100vh;
+  
+}
+.links .row{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.links img{
+    width: 80%;
+    height: 30%;
+    margin: 10px;
+    margin-right: 25px;
+}
+.links .search{
+    padding: 15px;
+}
+.links .search h5{
+   font-size: 20px;
+   font-weight: 600;
+   width: 50%;
+   text-align: start;
+   padding-bottom: 10px;
+}
+.links .btn{
+    padding: 5px 15px 5px 15px;
+    margin-top: 8px;
+    color: white;
+        background-color: #6f0215;
+    }
+    .links .btn:hover{
+        color: #193944;
+        background-color: white;
+        border: none;
+        border: 1px solid #6f0215;
+    }
+
+.links .search h5:hover{
+    color: #6f0215;
+}
+.links  .col-md-3{
+    display: flex;
+    flex-flow: column;
+    padding: 20px;
+
+    }
+    .links .info{
+        margin: 10px;
+        border: 1px solid $mainColor;
+        border-radius: 5%;
+       
+        
+    }
+    .links  p{
+        font-size: 20px;
+        font-weight: 600;
+        width: 50%;
+        text-align: start;
+        padding-bottom: 8px;
+        margin-top: 10px;
+        margin-right: 15px;
+
+    }
+    .links .info p:hover{color: #6f0215;}
+     .info .content{
+        text-align: start;
+        padding: 10px;
+        height: 100%;
+        
+     }
+     .links .info .content a{
+        text-decoration: none;
+        color: #193944;
+        padding-bottom: 15px;
+        font-size: 18px;
+        font-weight: 600;
+     }
+     .links .info .content .one{
+        padding-bottom: 15px;
+
+     }
+     .links .info .content a:hover{
+        color: #6f0215;
+     }
+     .links .text .col-md-8{
+        padding: 40px;
+        text-align: right;
+     }
+     .links .text .col-md-8 p{
+       width: 100%;
+       line-height: -8px;
+       font-size: 20px;  
+             
+     }
+     .links .text .col-md-8 a{
+        text-decoration: none;
+        color: #a87d5b;
+        font-size: 20px;
+     }
+.links .background{
+    width: 80%;
+    margin: 20px;
+    height: 18%;
+}
+
+// end links
