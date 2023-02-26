@@ -1,53 +1,68 @@
 @import "../../../styles.scss";
 @import "../../app.component.scss";
 
-header{
-    .navbar-brand{
-        img{
+
+header {
+    .navbar-brand {
+        img {
             width: 200px;
             height: 80px;
         }
     }
-    .navbar{
-        padding: 15px 0px ;
+
+    .navbar {
+        padding: 15px 0px;
     }
-    .top-nav{
+
+    .top-nav {
         position: relative;
-        .dark-mode{
+        border-bottom: 1px solid $main-color;
+        transition: all .5s;
+        .dark-mode {
             position: absolute;
             left: 225px;
-            margin-left:20px;
-            li{
-                i{
+            margin-left: 20px;
+
+            li {
+                i {
                     font-size: 18px;
                     color: $main-color;
                     transition: all .3s ease-in-out;
-                    &:hover{
+
+                    &:hover {
                         color: #000;
                     }
                 }
             }
         }
-        .lanuage{
-            li{
-                margin: 0px 10px ;
+
+        .lanuage {
+            li {
+                margin: 0px 10px;
                 font-size: 15px;
-                i{
+
+                i {
                     padding: 7px;
                 }
             }
-            .mybtn{
+
+            .mybtn {
                 padding: 3px 8px;
             }
         }
     }
-    .bottom-nav{
-        .navbar-nav{
-            li{
-                padding:0px 20px ;
-                a{
-                    color: $text-light;
-                    &:hover{
+
+    .bottom-nav {
+        transition: .5s;
+
+        .navbar-nav {
+            li {
+                padding: 0px 20px;
+
+                a {
+                    color: $text-dark;
+
+                    &:hover {
                         color: $main-color;
                     }
                 }
