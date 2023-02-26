@@ -2,10 +2,7 @@ img{
     height: 95vh;
     background-size: cover;
 }
-body{
-    font-family: 'Cairo', sans-serif;;
 
-}
 *{
     margin: 0;
     padding: 0;
@@ -44,7 +41,7 @@ $mainColor2: #193944;
     
 }
 .about .col-md-4:hover{
-    background-color: #193944;
+    background-color: $mainColor2;
     color: white;
     transition: 0.5s all;
     padding: 10px;
@@ -57,7 +54,7 @@ $mainColor2: #193944;
     text-align: start;
 }
 .about .col-md-4{
-    border: 1px #193944 solid;
+    border: 1px $mainColor2 solid;
 }    
 // نهايه رياده الاعمال
 
@@ -67,7 +64,7 @@ margin-top: 30px;
 
 }
 .gallery .row{
-    background-color: #193944;
+    background-color: $mainColor2;
     display: flex;
     justify-content: center;
 }
@@ -110,17 +107,17 @@ margin-top: 30px;
     padding: 5px 15px 5px 15px;
     margin-top: 8px;
     color: white;
-        background-color: #6f0215;
+        background-color: $mainColor;
     }
     .links .btn:hover{
-        color: #193944;
+        color: $mainColor2;
         background-color: white;
         border: none;
-        border: 1px solid #6f0215;
+        border: 1px solid $mainColor;
     }
 
 .links .search h5:hover{
-    color: #6f0215;
+    color: $mainColor;
 }
 .links  .col-md-3{
     display: flex;
@@ -145,7 +142,7 @@ margin-top: 30px;
         margin-right: 15px;
 
     }
-    .links .info p:hover{color: #6f0215;}
+    .links .info p:hover{color: $mainColor;}
      .info .content{
         text-align: start;
         padding: 10px;
@@ -154,17 +151,17 @@ margin-top: 30px;
      }
      .links .info .content a{
         text-decoration: none;
-        color: #193944;
+        color: $mainColor2;
         padding-bottom: 15px;
-        font-size: 18px;
-        font-weight: 600;
+        font-size: 15px;
+        font-weight: 500;
      }
      .links .info .content .one{
         padding-bottom: 15px;
 
      }
      .links .info .content a:hover{
-        color: #6f0215;
+        color: $mainColor;
      }
      .links .text .col-md-8{
         padding: 40px;
@@ -178,7 +175,7 @@ margin-top: 30px;
      }
      .links .text .col-md-8 a{
         text-decoration: none;
-        color: #a87d5b;
+        color: $mainColor1;
         font-size: 20px;
      }
 .links .background{
