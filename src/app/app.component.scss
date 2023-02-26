@@ -57,3 +57,10 @@ html {
         font-family: 'Poppins', sans-serif;
     }
 }
+
+.main-page{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
