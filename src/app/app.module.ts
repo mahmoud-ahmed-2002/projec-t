@@ -9,6 +9,9 @@ import { AboutComponent } from './componet/about/about.component';
 import { FooterComponent } from './componet/footer/footer.component';
 import { NavbarComponent } from './componet/navbar/navbar.component';
 import { CarouselComponent } from './componet/home/componet/carousel/carousel.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { GalleryComponent } from './componet/home/componet/gallery/gallery.component';
 
 
 
@@ -19,11 +22,14 @@ import { CarouselComponent } from './componet/home/componet/carousel/carousel.co
     AboutComponent,
     FooterComponent,
     NavbarComponent,
-    CarouselComponent
+    CarouselComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    CarouselModule,
+    BrowserAnimationsModule,
     
   ],
   providers: [],

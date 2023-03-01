@@ -74,3 +74,32 @@ header {
         }
     }
 }
+
+.nav-scroll{
+    position: fixed;
+    top: -50px;
+    width: 100%;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .7s;
+    .navbar {
+        padding: 15px 0px;
+        li {
+            padding: 0px 20px;
+
+            a {
+                color: $text-dark;
+
+                &:hover {
+                    color: $main-color;
+                }
+            }
+        }
+    }
+}
+.nav-scroll.scroll{
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
