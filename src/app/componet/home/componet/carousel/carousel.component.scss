@@ -14,10 +14,10 @@
     position: relative;
     .carousel-item{
         img{
-            min-width: 100%;
-            height: 700px;
-            object-position: center;
-            object-fit: cover;
+            width: 100vh;
+            height: 100vh;
+            background-position: center center;
+            background-size: cover;
         }
         
         .layer{
