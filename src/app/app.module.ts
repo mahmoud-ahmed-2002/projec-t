@@ -13,6 +13,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GalleryComponent } from './componet/home/componet/gallery/gallery.component';
 import { ErrorComponent } from './error/error.component';
+import { NewsComponent } from './componet/home/componet/news/news.component';
 
 
 
@@ -25,7 +26,8 @@ import { ErrorComponent } from './error/error.component';
     NavbarComponent,
     CarouselComponent,
     GalleryComponent,
-    ErrorComponent
+    ErrorComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,

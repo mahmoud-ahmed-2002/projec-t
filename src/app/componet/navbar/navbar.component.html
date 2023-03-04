@@ -12,7 +12,7 @@
           </ul> -->
           <ul class="lanuage me-auto mb-2 mb-lg-0">
             <li class="mybtn" (click)="isTest=!isTest" *ngIf="isTest"><i class="fas fa-globe"></i> AR</li>
-            <li class="mybtn" (click)="isTest=!isTest" *ngIf="!isTest"><i class="fas fa-globe"></i> EN</li>
+            <li class="mybtn" (click)="isTest=!isTest" *ngIf="!isTest" routerLink="englich"><i class="fas fa-globe"></i> EN</li>
           </ul>
         </div>
       </div>
@@ -57,18 +57,24 @@
     </nav>
   </div>
 </header>
+
+<!-- --------------nav will apeard when scroll------------------  -->
+
 <div class=" nav-scroll">
   <nav class="navbar navbar-expand-lg navbar-light bg-dark">
     <div class="container">
-      <a class="navbar-brand d-md-none">
-        <img src="../../../assets/iamges/menofia-university.png" alt="">
+      <a class="navbar-brand ">
+        <a>
+          <img src="../../../assets/iamges/min-logo-navbar.jpg" alt="">
+          جامعه المنوفيه
+        </a>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me- mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link" routerLink="home" routerLinkActive="nav-active">الرئيسيه</a>
           </li>

@@ -131,6 +131,7 @@
       border-radius: 50%;
       bottom: 12px;
     }
+
     &::before {
       content: '';
       background-color: $main-color;
@@ -143,3 +144,4 @@
     }
   }
 }
+
