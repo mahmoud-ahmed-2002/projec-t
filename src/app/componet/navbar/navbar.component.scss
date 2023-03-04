@@ -3,6 +3,7 @@
 
 
 header {
+
     // position: fixed;
     // z-index: 2;
     // top: 0;
@@ -22,6 +23,7 @@ header {
         position: relative;
         border-bottom: 1px solid $main-color;
         transition: all .5s;
+
         .dark-mode {
             position: absolute;
             left: 225px;
@@ -63,11 +65,17 @@ header {
             li {
                 padding: 0px 20px;
 
+                .nav-active {
+                    transform: scale(1.1);
+                    color: $sec-color;
+                }
+
                 a {
-                    color: $text-dark;
+                    color: $text-light;
 
                     &:hover {
-                        color: $main-color;
+                        transform: scale(1.1);
+                        color: $sec-color;
                     }
                 }
             }
@@ -75,7 +83,7 @@ header {
     }
 }
 
-.nav-scroll{
+.nav-scroll {
     position: fixed;
     top: -50px;
     width: 100%;
@@ -83,22 +91,31 @@ header {
     opacity: 0;
     visibility: hidden;
     transition: all .7s;
+
     .navbar {
         padding: 15px 0px;
+
         li {
             padding: 0px 20px;
 
             a {
-                color: $text-dark;
+                color: $text-light;
 
                 &:hover {
-                    color: $main-color;
+                    transform: scale(1.1);
+                    color: $sec-color;
                 }
+            }
+
+            .nav-active {
+                transform: scale(1.1);
+                color: $sec-color;
             }
         }
     }
 }
-.nav-scroll.scroll{
+
+.nav-scroll.scroll {
     top: 0;
     opacity: 1;
     visibility: visible;
